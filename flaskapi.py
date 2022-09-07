@@ -59,7 +59,7 @@ def upload_files():
                     row[1] = time.mktime(time_temp.timetuple())
                     # Insert data value to sensor_value table
                     cur.execute(
-                        "INSERT INTO sensor_value VALUES (%s, %s, %s, %s)",
+                        'INSERT INTO sensor_value VALUES (%s, %s, %s, %s)',
                         row
                     )
             conn.commit()
