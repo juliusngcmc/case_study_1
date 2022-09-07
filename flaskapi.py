@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for
 import os
-from os.path import join, dirname, realpath
-from flask_sqlalchemy import SQLAlchemy
+import psycopg2
+import csv
+from config import config
 
 app = Flask(__name__)
 
@@ -30,27 +31,34 @@ def upload_files():
         # set the file path
         uploaded_file.save(file_path)
         # save the file
+        # Connect to the PostgresSQL database server
+        conn = None
+        try:
+            # read connection parameters
+            params = config()
+            # connect to the PostgreSQL server
+            print('Connecting to the PostgreSQL database...')
+            conn = psycopg2.connect(**params)
+            # create a cursor
+            cur = conn.cursor()
+            # execute a statement
+            with open('input_sensor_data/sensor_value.csv', 'r') as f:
+                reader = csv.reader(f)
+                next(reader)  # Skip the header row.
+                for row in reader:
+                    cur.execute(
+                        "INSERT INTO sensor_value VALUES (%s, %s, %s, %s)",
+                        row
+                    )
+            conn.commit()
+        except (Exception, psycopg2.DatabaseError) as error:
+            print(error)
+        finally:
+            if conn is not None:
+                conn.close()
+                print('Database connection closed.')
+
         return redirect(url_for('index'))
-
-
-# Unable track modifications
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-# Connect to PostgreSQL Server
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:mypass@localhost:5431/postgres'
-db = SQLAlchemy(app)
-
-
-class SensorValue(db.Model):
-    __tablename__ = 'books'
-    sensor_id = db.Column(db.SERIAL(), primary_key=True)
-    timestamp = db.Column(db.TIMESTAMP(), nullable=False)
-    sensor_type = db.Column(db.VARCHAR(), nullable=False, default=0)
-    reading = db.Column(db.INTEGER(), nullable=False, default=0)
-
-    def __init__(self, book_title, book_text, likes):
-        self.book_title = book_title
-        self.book_text = book_text
-        self.likes = likes
 
 
 if __name__ == "__main__":
