@@ -15,8 +15,6 @@ services:
         networks:
           - postgres
         restart: unless-stopped
-    #    command:
-#      -
 
 networks:
     postgres:
