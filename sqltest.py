@@ -4,8 +4,9 @@ from config import config
 import datetime
 import time
 
+
 def connect():
-    """ Connect to the PostgresSQL database server """
+    # Connect to the PostgresSQL database server
     conn = None
     try:
         # read connection parameters
@@ -25,7 +26,7 @@ def connect():
             for row in reader:
                 # Temperature on a normal scale (2000 means 20)
                 if row[2] == "Temperature":
-                    row[3] = int(row[3])/100
+                    row[3] = int(row[3]) / 100
                 # Ignore Humidity value that is negative or greater than 100
                 if row[2] == "Humidity" and (int(row[3]) > 100 or int(row[3]) < 0):
                     continue
@@ -34,9 +35,9 @@ def connect():
                 row[1] = time.mktime(time_temp.timetuple())
                 # Insert data value to sensor_value table
                 cur.execute(
-                            "INSERT INTO sensor_value VALUES (%s, %s, %s, %s)",
-                            row
-                            )
+                    "INSERT INTO sensor_value VALUES (%s, %s, %s, %s)",
+                    row
+                )
         conn.commit()
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
