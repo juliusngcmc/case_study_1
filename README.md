@@ -40,6 +40,7 @@ Click Choose File to choose a csv file to PostgreSQL Server. We can using [this]
 If you choose another csv file, please stay with this format.
   - The name of CSV file is "sensor_value.csv"
   - The column name of CSV file arranged in order: sensor_id, timestamp, sensor_type, reading
+![alt text](https://github.com/juliusngcmc/case_study_1/blob/main/readme_image/img_2.png?raw=true)
 
 ## - Step 7:
 For the "Business Requirements", running the [business_requirement.sql](https://github.com/juliusngcmc/case_study_1/blob/main/bussiness_requirement.sql) to create a view for:
