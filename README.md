@@ -13,6 +13,9 @@ python -m venv env
 ```
 pip install -r requirements.txt
 ```
+```
+pip install docker
+```
 ## - Step 3: Running a PostgreSQL server on docker
 ```
 docker-compose up -d
