@@ -48,8 +48,10 @@ def upload_files():
                 reader = csv.reader(f)
                 next(reader)  # Skip the header row.
                 for row in reader:
+                    if row[2] != "Temperature":
+                        pass
                     # Temperature on a normal scale (2000 means 20)
-                    if row[2] == "Temperature":
+                    else:
                         row[3] = int(row[3]) / 100
                     # Ignore Humidity value that is negative or greater than 100
                     if row[2] == "Humidity" and (int(row[3]) > 100 or int(row[3]) < 0):
