@@ -36,7 +36,7 @@ Browser will appear like this
 
 Press Ctrl + C to exit the REST API running.
 ## - Step 6: 
-Click Choose File to choose a csv file to PostgreSQL Server. We can using [this](https://github.com/juliusngcmc/case_study_1/blob/main/sensor_value.csv) in the repo as an input demo. Then hit submit. The CSV will be insert in PostgreSQL Server
+Click Choose File to choose a csv file to PostgreSQL Server. We can using [this](https://github.com/juliusngcmc/case_study_1/blob/main/sensor_value.csv) in the repo as an input demo. Then hit submit. The CSV will be insert in PostgreSQL Server.
 If you choose another csv file, please stay with this format.
   - The name of CSV file is "sensor_value.csv"
   - The column name of CSV file arranged in order: sensor_id, timestamp, sensor_type, reading
