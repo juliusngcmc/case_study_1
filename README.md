@@ -34,6 +34,7 @@ Then click on link appear on terminal. Usually is running on [http://127.0.0.1:5
 Browser will appear like this
 ![alt text](https://github.com/juliusngcmc/case_study_1/blob/main/readme_image/img_1.png?raw=true)
 
+Press Ctrl + C to exit the REST API running.
 - Step 6: 
 Click Choose File to choose a csv file to PostgreSQL Server. We can using [this](https://github.com/juliusngcmc/case_study_1/blob/main/sensor_value.csv) in the repo as an input demo. Then hit submit. The CSV will be insert in PostgreSQL Server
 If you choose another csv file, please stay with this format.
