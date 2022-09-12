@@ -42,7 +42,7 @@ If you choose another csv file, please stay with this format.
   - The column name of CSV file arranged in order: sensor_id, timestamp, sensor_type, reading
 
 ## - Step 7:
-For the "usiness Requirements", running the [bussiness_requirement.sql](https://github.com/juliusngcmc/case_study_1/blob/main/bussiness_requirement.sql) to create a view for:
+For the "Business Requirements", running the [business_requirement.sql](https://github.com/juliusngcmc/case_study_1/blob/main/bussiness_requirement.sql) to create a view for:
   - The hourly median temperature for each sensor (hourly_median_temperature_view)
   - The percentage difference in hourly average temperature against the previous hour for each sensor (sensor_temperature_view)
   - The half-hourly average “dew point” for each sensor (dew_point_view)
