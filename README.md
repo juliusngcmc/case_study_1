@@ -4,12 +4,8 @@
 # II. Running step by step
 - Step 1: Create an enviroment and activate and enviroment
 ```
-function test() {
-  console.log("python -m venv env");
-}
+python -m venv env
 ```
 ```
-function test() {
-  console.log(".\env\Scripts\activate");
-}
+.\env\Scripts\activate"
 ```
