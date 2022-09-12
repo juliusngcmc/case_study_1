@@ -1,10 +1,8 @@
 DROP VIEW IF EXISTS sensor_temperature_view;
 DROP VIEW IF EXISTS hourly_median_temperature_view;
-DROP VIEW IF EXISTS half_hourly_median_humidity_view;
 DROP VIEW IF EXISTS dew_point_view;
 DROP VIEW IF EXISTS only_temp_view;
 DROP VIEW IF EXISTS only_humid_view;
-DROP VIEW IF EXISTS dew_point_view;
 
 CREATE VIEW hourly_median_temperature_view AS
 SELECT sensor_id, sensor_type,
