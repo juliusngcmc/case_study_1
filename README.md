@@ -48,5 +48,9 @@ If you choose another csv file, please stay with this format.
 ## - Step 7:
 For the "Business Requirements", running the [business_requirement.sql](https://github.com/juliusngcmc/case_study_1/blob/main/bussiness_requirement.sql) to create a view for:
   - The hourly median temperature for each sensor (hourly_median_temperature_view)
+    ![alt text](https://github.com/juliusngcmc/case_study_1/blob/main/readme_image/img_3.png?raw=true)
   - The percentage difference in hourly average temperature against the previous hour for each sensor (sensor_temperature_view)
+    ![alt text](https://github.com/juliusngcmc/case_study_1/blob/main/readme_image/img_4.png?raw=true)
   - The half-hourly average “dew point” for each sensor (dew_point_view)
+    ![alt text](https://github.com/juliusngcmc/case_study_1/blob/main/readme_image/img_5.png?raw=true)
+
