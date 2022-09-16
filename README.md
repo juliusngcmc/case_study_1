@@ -7,7 +7,7 @@
 python -m venv env
 ```
 ```
-.\env\Scripts\activate"
+.\env\Scripts\activate
 ```
 ## Step 2: Install docker and needed library 
 ```
