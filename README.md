@@ -53,7 +53,7 @@ Using Pyspark to transform data with Business Requirements. Open the log of Pysp
 pyspark --jars postgresql.jar
 ```
 ![alt text](https://github.com/juliusngcmc/case_study_1/blob/main/readme_image/img_9.png?raw=true) 
-Then open the run.ipynb in work folder. Then chose Run => Run All Cells                                                                                    
+Then open the run.ipynb in work folder. Then chose Run => Run All Cells. In case of error, reload Kernel and Run All Cells again!                                       
 ![alt text](https://github.com/juliusngcmc/case_study_1/blob/main/readme_image/img_7.png?raw=true)                                                     
 The notebook will create the dew_point.csv
 ![alt text](https://github.com/juliusngcmc/case_study_1/blob/main/readme_image/img_8.png?raw=true)
