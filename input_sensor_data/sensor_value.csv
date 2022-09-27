@@ -1,4 +1,4 @@
-sensor_id, timestamp, sensor_type, reading
+sensor_id,timestamp,sensor_type,reading
 1,2022-09-01 14:00:03.000000,Temperature,2000
 1,2022-09-01 14:00:33.000000,Humidity,60
 2,2022-09-01 14:00:10.000000,Temperature,2500

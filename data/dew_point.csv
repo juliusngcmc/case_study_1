@@ -1,9 +1,9 @@
 sensor_id,time,RH,T,dew_point
-2,"Row(start=datetime.datetime(2022, 9, 1, 15, 30), end=datetime.datetime(2022, 9, 1, 16, 0))",56.0,50.5,41.7
-1,"Row(start=datetime.datetime(2022, 9, 1, 14, 30), end=datetime.datetime(2022, 9, 1, 15, 0))",80.0,35.0,31.0
-2,"Row(start=datetime.datetime(2022, 9, 1, 14, 0), end=datetime.datetime(2022, 9, 1, 14, 30))",47.0,17.5,6.9
-2,"Row(start=datetime.datetime(2022, 9, 1, 14, 30), end=datetime.datetime(2022, 9, 1, 15, 0))",56.0,50.5,41.7
-2,"Row(start=datetime.datetime(2022, 9, 1, 15, 0), end=datetime.datetime(2022, 9, 1, 15, 30))",55.0,25.5,16.5
 1,"Row(start=datetime.datetime(2022, 9, 1, 15, 30), end=datetime.datetime(2022, 9, 1, 16, 0))",80.0,35.0,31.0
-1,"Row(start=datetime.datetime(2022, 9, 1, 14, 0), end=datetime.datetime(2022, 9, 1, 14, 30))",52.5,27.5,18.0
+2,"Row(start=datetime.datetime(2022, 9, 1, 15, 0), end=datetime.datetime(2022, 9, 1, 15, 30))",55.0,25.5,16.5
+2,"Row(start=datetime.datetime(2022, 9, 1, 14, 0), end=datetime.datetime(2022, 9, 1, 14, 30))",47.0,17.5,6.9
+2,"Row(start=datetime.datetime(2022, 9, 1, 15, 30), end=datetime.datetime(2022, 9, 1, 16, 0))",56.0,50.5,41.7
 1,"Row(start=datetime.datetime(2022, 9, 1, 15, 0), end=datetime.datetime(2022, 9, 1, 15, 30))",48.0,30.0,19.6
+2,"Row(start=datetime.datetime(2022, 9, 1, 14, 30), end=datetime.datetime(2022, 9, 1, 15, 0))",56.0,50.5,41.7
+1,"Row(start=datetime.datetime(2022, 9, 1, 14, 0), end=datetime.datetime(2022, 9, 1, 14, 30))",52.5,27.5,18.0
+1,"Row(start=datetime.datetime(2022, 9, 1, 14, 30), end=datetime.datetime(2022, 9, 1, 15, 0))",80.0,35.0,31.0

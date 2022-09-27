@@ -12,8 +12,6 @@ services:
            - ./setup.sql:/docker-entrypoint-initdb.d/setup.sql
         ports:
           - "5431:5432"
-        networks:
-          - postgres
         restart: unless-stopped
     pyspark:
         image: jupyter/pyspark-notebook:latest
