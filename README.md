@@ -54,3 +54,9 @@ For the "Business Requirements", running the [business_requirement.sql](https://
   - The half-hourly average “dew point” for each sensor (dew_point_view)
     ![alt text](https://github.com/juliusngcmc/case_study_1/blob/main/readme_image/img_5.png?raw=true)
 
+## Step 8 (case extended):
+Using Pyspark to transform data with Business Requirements. Open the log of Pyspark to access Jupyter Notebook via "http://127.0.0.1:8888/lab?token..."
+![alt text](https://github.com/juliusngcmc/case_study_1/blob/main/readme_image/img_6.png?raw=true)
+Open the run.ipynb in work folder. Then chose Run => Run All Cells
+![alt text](https://github.com/juliusngcmc/case_study_1/blob/main/readme_image/img_7.png?raw=true)
+The notebook will create the dew_point.csv
